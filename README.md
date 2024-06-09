@@ -1,32 +1,34 @@
-# Sum Array
+# HTML Setup for Sum Array Application Testing
 
-In this activity, you will write code to create a function that adds up all the numbers in a given array and returns the total.
+This HTML document is configured for testing a sum array application using Mocha and Chai.
 
-## Instructions
+- **Meta Tags**:
+  - Sets character encoding to UTF-8.
+  - Ensures proper rendering and touch zooming on mobile devices.
+  - Specifies compatibility with the latest rendering engine for Internet Explorer.
 
-* Open [Unsolved/sum-array.js](./Unsolved/sum-array.js) in your code editor -- this is the only file you will modify in this activity.
+- **Title**:
+  - Sets the title of the webpage to "Sum Array".
 
-* In this file, you will write code in the body of the `sumArray` function to achieve the following:
+- **External Resources**:
+  - Links to the Mocha CSS stylesheet for test result styling.
+  - Includes Mocha and Chai JavaScript libraries for testing functionality.
 
-  * Add all of the numbers in the given `arr` array argument and return the total.
+- **Body Content**:
+  - Contains a div with the ID "mocha" for displaying Mocha test results.
+  - Configures Mocha for Behavior-Driven Development (BDD) using `mocha.setup("bdd")`.
+  - Includes JavaScript files for sum array functionality and corresponding tests.
+  - Runs Mocha tests with `mocha.run()` to execute the test suite.
 
-    * For example, given the following array:
+# JavaScript Sum Array Function
 
-    ```js
-    var arr = [3, 1, 5, 6];
-    ```
+This JavaScript code defines a function `sumArray` that calculates the sum of numbers in an array.
 
-    * The following number should be returned:
+- **Function Logic**:
+  - Takes an array of numbers as input.
+  - Initializes a variable `result` to store the sum.
+  - Iterates through the array and adds each element to `result`.
+  - Returns the final sum of the array elements.
 
-    ```js
-    15;
-    ```
-
-* You can check to see if your function works properly by opening [Unsolved/test.html](./Unsolved/test.html) in your web browser.
-
-  * Functions that pass the tests will be denoted with a green check mark.
-
-  * Functions that fail the tests will be denoted with a red x and an error message.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+- **Example Usage**:
+  - Calling `sumArray([3, 1, 5, 6])` will return 15, which is the sum of 3, 1, 5, and 6.
